@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <swiper :options="swiperOption">
+    <swiper :options="swiperOption" v-if="swiperList.length">
       <!-- slides -->
       <swiper-slide v-for="item in swiperList" :key="item.id">
         <img class="img-swiper" :src="item.imgUrl">
@@ -26,22 +26,11 @@ export default {
         },
         effect: 'fade',
         loop: true
-      },
-      swiperList: [
-        {
-          id: 1,
-          imgUrl: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8a759102ea77eb2ffaa8da6aab6fc2f9.jpg?thumb=1&w=720&h=360'
-        },
-        {
-          id: 2,
-          imgUrl: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dc4c461bd70ad225a51b0d522c1d75fb.jpg?thumb=1&w=720&h=360'
-        },
-        {
-          id: 3,
-          imgUrl: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2bea16c2f81cb22867afeae3e7467a92.jpg?thumb=1&w=720&h=360'
-        }
-      ]
+      }
     }
+  },
+  props: {
+    swiperList: Array
   }
 }
 </script>
