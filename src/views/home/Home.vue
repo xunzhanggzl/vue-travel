@@ -2,21 +2,28 @@
   <div>
     <home-header></home-header>
     <home-swiper></home-swiper>
+    <home-icons></home-icons>
+    <div class="line"></div>
   </div>
 </template>
 
 <script>
 import HomeHeader from './components/Header'
 import HomeSwiper from './components/Swiper'
+import HomeIcons from './components/Icons'
 
 export default {
   name: 'home',
   components: {
     HomeHeader,
-    HomeSwiper
+    HomeSwiper,
+    HomeIcons
   }
 }
 </script>
 
 <style lang="stylus" scoped>
+  .line
+    height 0.1rem
+    background-color: rgb(245, 245, 245)
 </style>

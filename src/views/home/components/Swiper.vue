@@ -30,15 +30,15 @@ export default {
       swiperList: [
         {
           id: 1,
-          imgUrl: 'https://ossweb-img.qq.com/upload/adw/image/20200207/a111592dbd4739f2c571d4ae4e19f247.jpeg'
+          imgUrl: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8a759102ea77eb2ffaa8da6aab6fc2f9.jpg?thumb=1&w=720&h=360'
         },
         {
           id: 2,
-          imgUrl: 'https://ossweb-img.qq.com/upload/adw/image/20200201/ba5d308c7286765270a72066e42dadb2.jpg'
+          imgUrl: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dc4c461bd70ad225a51b0d522c1d75fb.jpg?thumb=1&w=720&h=360'
         },
         {
           id: 3,
-          imgUrl: 'https://ossweb-img.qq.com/upload/adw/image/20200207/322246cf2cb877beb91cd2310f2fb366.jpeg'
+          imgUrl: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2bea16c2f81cb22867afeae3e7467a92.jpg?thumb=1&w=720&h=360'
         }
       ]
     }
@@ -52,7 +52,7 @@ export default {
   .wrapper
     width 100%
     height 0
-    padding-bottom 41.25%
+    padding-bottom 50%
     overflow hidden
     .img-swiper
       width 100%
