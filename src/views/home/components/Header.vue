@@ -7,10 +7,12 @@
       <span class="iconfont">&#xe632;</span>
       搜索手机
     </div>
-    <div class="header-right">
-      {{city}}
-      <span class="iconfont">&#xe64a;</span>
-    </div>
+    <router-link to="/city">
+      <div class="header-right">
+        {{city}}
+        <span class="iconfont">&#xe64a;</span>
+      </div>
+    </router-link>
   </div>
 </template>
 
@@ -45,4 +47,5 @@ export default {
     .header-right
       width 1.24rem
       text-align center
+      color #fff
 </style>
