@@ -14,6 +14,8 @@ import HomeIcons from './components/Icons'
 
 import axios from 'axios'
 
+import { mapState } from 'vuex'
+
 export default {
   name: 'home',
   components: {
@@ -23,6 +25,7 @@ export default {
   },
   data () {
     return {
+      lastCity: '',
       swiperList: [],
       iconList: []
     }
@@ -40,8 +43,18 @@ export default {
         })
     }
   },
+  computed: {
+    ...mapState(['city'])
+  },
   mounted () {
+    this.lastCity = this.city
     this.getData()
+  },
+  activated () {
+    if (this.lastCity !== this.city) {
+      this.lastCity = this.city
+      this.getData()
+    }
   }
 }
 </script>
